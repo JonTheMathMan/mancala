@@ -1,13 +1,15 @@
 //houses
+//row one
 for(var i=1;i<7;i++)
 	{
-		new HousePocket(i*50+5,5);
+		createImg({source:"./graphics/HousePocket.png",left:i*50+5,top:5});
 	}
+//row two
 for(var u=1;u<7;u++)
 	{
-		new HousePocket(u*50+5,55);
+		createImg({source:"./graphics/HousePocket.png",left:u*50+5,top:55});
 	}
 
 //stores
-new StorePocket(5,5);
-new StorePocket(355,5);
+createImg({source:"./graphics/StorePocket.png",left:5,top:5});
+createImg({source:"./graphics/StorePocket.png",left:355,top:5});
