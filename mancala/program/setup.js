@@ -1,15 +1,15 @@
 //houses
-//row one
+	//row one
 for(var i=1;i<7;i++)
 	{
-		createImg({source:"./graphics/HousePocket.png",left:i*50+5,top:5});
+		createPocket({source:"./graphics/HousePocket.png",left:i*50+5,top:20,gems:4});
 	}
-//row two
+	//row two
 for(var u=1;u<7;u++)
 	{
-		createImg({source:"./graphics/HousePocket.png",left:u*50+5,top:55});
+		createPocket({source:"./graphics/HousePocket.png",left:u*50+5,top:90,gems:4});
 	}
 
 //stores
-createImg({source:"./graphics/StorePocket.png",left:5,top:5});
-createImg({source:"./graphics/StorePocket.png",left:355,top:5});
+createPocket({source:"./graphics/StorePocket.png",left:5,top:30,gems:0});
+createPocket({source:"./graphics/StorePocket.png",left:355,top:30,gems:0});
