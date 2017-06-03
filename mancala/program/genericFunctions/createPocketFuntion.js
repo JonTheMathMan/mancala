@@ -1,7 +1,7 @@
 function createPocket(passedInProperties={})
 {
 	//set default properties and concatenate with the passed in properties so that any amount of properties can be passed in, and they can be passed in any order.
-	var pocketProperties = {source:"",left:0,top:0,gems:0};
+	var pocketProperties = {source:"",left:0,top:0,gems:0,pocketType:"unknownPocketType"};
 	Object.assign(pocketProperties,passedInProperties);
 	
 	//a board variable for easy access
@@ -14,7 +14,8 @@ function createPocket(passedInProperties={})
 	newPocket.style.left = pocketProperties.left;
 	newPocket.style.top = pocketProperties.top;
 	newPocket.gemsHeld = pocketProperties.gems;
-	//newPocket.addEventListener("click",function(e){console.log(e.target.gemsHeld)});
+	newPocket.pocketType = pocketProperties.pocketType;
+	newPocket.addEventListener("click",function(e){gemMove(e.target);});
 	board.appendChild(newPocket);
 	
 	//make the gems textarea
