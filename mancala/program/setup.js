@@ -11,5 +11,5 @@ for(var u=1;u<7;u++)
 	}
 
 //stores
-createPocket({source:"./graphics/StorePocket.png",left:5,top:30,gems:0});
-createPocket({source:"./graphics/StorePocket.png",left:355,top:30,gems:0});
+createPocket({source:"./graphics/StorePocket.png",left:5,top:30});
+createPocket({source:"./graphics/StorePocket.png",left:355,top:30});

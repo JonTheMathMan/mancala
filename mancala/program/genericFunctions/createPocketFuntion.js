@@ -1,6 +1,13 @@
-function createPocket(pocketProperties={source:"",left:0,top:0,gems:"hello"})
+function createPocket(passedInProperties={})
 {
+	//set default properties and concatenate with the passed in properties so that any amount of properties can be passed in, and they can be passed in any order.
+	var pocketProperties = {source:"",left:0,top:0,gems:0};
+	Object.assign(pocketProperties,passedInProperties);
+	
+	//a board variable for easy access
 	var board = document.getElementById("board");
+	
+	//make the pocket img
 	var newPocket = document.createElement("img");
 	newPocket.src = pocketProperties.source;
 	newPocket.style.position = "absolute";
@@ -10,6 +17,7 @@ function createPocket(pocketProperties={source:"",left:0,top:0,gems:"hello"})
 	//newPocket.addEventListener("click",function(e){console.log(e.target.gemsHeld)});
 	board.appendChild(newPocket);
 	
+	//make the gems textarea
 	var gemsDisplay = document.createElement("textarea");
 	gemsDisplay.style.position = "absolute";
 	gemsDisplay.style.width = 50;
@@ -21,5 +29,6 @@ function createPocket(pocketProperties={source:"",left:0,top:0,gems:"hello"})
 	gemsDisplay.value = pocketProperties.gems;
 	board.appendChild(gemsDisplay);
 	newPocket.gemsView = gemsDisplay;
+	
 	return newPocket;
 }
