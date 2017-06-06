@@ -1,10 +1,20 @@
 <html>
 <body>
+<style>
+	#board{
+		transition: transform 3s;
+	}
+	</style>
 <div id="board" style="position:absolute;background-color:tan;width:410;height:141;"></div>
-<textarea id="gemsCupView" disabled="true" style="position:absolute;top:300;resize:none">0</textarea>
+<div id="controls" style="position:absolute;top:300;">
+	<textarea id="gemsCupView" disabled="true" style="resize:none">holding:0</textarea>
+	<button onclick="rotateBoard()">Flip Board</button>
+</div>
+	<script src="program/genericFunctions/addElementWithPropsToBoard.js"></script>
 	<script src="program/genericFunctions/createPocketFuntion.js"></script>
 	<script src="program/globalObjects/gemsCup.js"></script>
 	<script src="program/genericFunctions/gemMove.js"></script>
 	<script src="program/setup.js"></script>
+	<script src="program/genericFunctions/rotateBoard.js"></script>
 </body>
 </html>
