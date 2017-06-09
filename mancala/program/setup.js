@@ -7,7 +7,7 @@ function setup()
 				//columns
 			for(var i=1;i<7;i++)
 				{
-					createPocket({source:"./graphics/HousePocket.png",left:i*50+5,top:u*50+(u+1)*20,gems:4,pocketType:"house"});
+					createPocket({source:"./graphics/HousePocketStone4.png",left:i*50+5,top:u*50+(u+1)*20,gems:4,pocketType:"house"});
 				}
 		}
 
