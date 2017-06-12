@@ -1,5 +1,5 @@
 # coding challenge mancala
-![alt text](screenshot1.png "The beginning of the game"
+![alt text](screenshot1.png "The beginning of the game")
 
 This is mancala. I designed it for the rules from wikipedia for the american version as best as I understood them.
 [https://en.wikipedia.org/wiki/Kalah](https://en.wikipedia.org/wiki/Kalah)
