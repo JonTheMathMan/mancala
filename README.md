@@ -1,4 +1,4 @@
-# coding challenge mancala
+# Coding Challenge Mancala
 ![alt text](screenshot1.png "The beginning of the game")
 
 This is mancala. I designed it for the rules from wikipedia for the american version as best as I understood them.
